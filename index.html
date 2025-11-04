@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soman Rahimi</title>
+    <meta name="description" content="Full Stack Developer crafting exceptional digital experiences with modern web technologies">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-primary">SR</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link" data-testid="nav-home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-testid="nav-about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-testid="nav-skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-testid="nav-projects">Projects</a></li>
+                <li><a href="#extra" class="nav-link" data-testid="nav-projects">Beyond the Code</a></li>
+                <li><a href="#contact" class="nav-link" data-testid="nav-contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" data-testid="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h4 class="hero-title" data-testid="hero-title">
+                <span class="hero-name">Soman</span>
+                <span class="hero-surname">Rahimi</span>
+            </h4>
+            <p class="hero-tagline" data-testid="hero-tagline">
+              Web Designer & Graphic Designer, Curious, Creative, Committed
+            </p>
+            <button class="cta-button" id="cta-button" data-testid="button-view-work">
+                <span>View My Projects</span>
+                <svg class="arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 13l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+                <div class="myphoto">
+                    <img src="" alt="" >
+                </div>
+            </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-testid="about-title">
+                    About <span class="title-accent">Me</span>
+                </h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-testid="about-journey-card">
+                    <h3 class="about-subtitle">My Journey</h3>
+                    <p class="about-paragraph">
+                        As a first-generation student, I’m driven to create opportunities
+                         for myself and others through technology. I enjoy experimenting with new tools,
+                         building projects from scratch, and figuring out how to turn ideas into something real.
+                    </p>
+                    <p class="about-paragraph">
+                   In my free time, I enjoy reading to stay curious and learning new things,
+                    and I explore cooking as a way to be creative and hands-on. Step by step,
+                    I’m building both my skills and the future I want to shape.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">Problem Solver</span>
+                        <span class="tag">Team Leader</span>
+                        <span class="tag">Innovation</span>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card" data-testid="about-feature-clean-code">
+                        
+                        <div class="feature-content">
+                            <h4 class="feature-title">Resilience & Growth</h4>
+                            <p class="feature-description">Embracing challenges as opportunities to grow stronger and more capable</p>
+                        </div>
+                    </div>
+                    <div class="feature-card" data-testid="about-feature-collaboration">
+                       
+                        <div class="feature-content">
+                            <h4 class="feature-title">Creativity & Expression</h4>
+                            <p class="feature-description">Finding joy in expressing ideas through projects, design, and storytelling</p>
+                        </div>
+                    </div>
+                    <div class="feature-card" data-testid="about-feature-innovation">
+                        
+                        <div class="feature-content">
+                            <h4 class="feature-title">Community Impact</h4>
+                            <p class="feature-description">Using my skills and time to make a difference for people around me</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-testid="skills-title">
+                    My <span class="title-accent">Skills</span>
+                </h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Technologies and tools I use to bring ideas to life</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-testid="skill-card-web-development">
+                    <div class="skill-header">
+                        <div class="skill-icon">🌐</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">Web Development</h3>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Building responsive, modern web applications</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-testid="skill-card-react">
+                    <div class="skill-header">
+                        <div class="skill-icon">⚛️</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">React</h3>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Hooks, Context API, component optimization</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-testid="skill-card-mysql">
+                    <div class="skill-header">
+                        <div class="skill-icon">🗄️</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">MySQL</h3>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Database design, optimization, complex queries</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-testid="skill-card-apollo">
+                    <div class="skill-header">
+                        <div class="skill-icon">🚀</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">Apollo</h3>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">GraphQL client, caching, state management</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 78%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-testid="skill-card-zoho-one">
+                    <div class="skill-header">
+                        <div class="skill-icon">⚙️</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">Zoho One</h3>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Business automation, integrations, workflows</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+             <div class="skills-grid">
+                <div class="skill-card" data-testid="skill-card-web-development">
+                    <div class="skill-header">
+                        <div class="skill-icon">🎭</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">Canva</h3>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">A versatile design tool for creating visually stunning graphics</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-testid="skill-card-react">
+                    <div class="skill-header">
+                        <div class="skill-icon">🔧</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name"> Git & GitHub</h3>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Used for version control and collaboration on coding projects</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 88%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-testid="skill-card-mysql">
+                    <div class="skill-header">
+                        <div class="skill-icon">🌈</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">Photoshop</h3>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Used for professional image editing and graphic design</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-testid="skill-card-apollo">
+                    <div class="skill-header">
+                        <div class="skill-icon">🛠️</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">PHP</h3>
+                            <span class="skill-level">Basic</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Server-side scripting for dynamic web applications</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 78%"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-testid="skill-card-zoho-one">
+                    <div class="skill-header">
+                        <div class="skill-icon">🧑‍💻</div>
+                        <div class="skill-info">
+                            <h3 class="skill-name">Python</h3>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                    </div>
+                    <p class="skill-description">Used for automation, data analysis, and backend development</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-testid="projects-title">
+                    Featured <span class="title-accent">Projects</span>
+                </h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">A showcase of my recent work and technical expertise</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-testid="project-card-e-commerce-platform">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            A full-stack e-commerce solution with React, Node.js, and MySQL. Features include user authentication, 
+                            payment processing, inventory management, and analytics dashboard.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Tailwind</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-github" data-testid="button-github-e-commerce-platform">
+                                <span>GitHub</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </button>
+                            <button class="btn-demo" data-testid="button-demo-e-commerce-platform">
+                                <span>Demo</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15,3 21,3 21,9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-testid="project-card-task-management-app">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <img src="download.jpg" alt=""  height="150px" width="100%" style="border-radius: 1rem;">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Pocket Classroom</h3>
+                        <p class="project-description">
+                            A collaborative pockect site to manage learning progress, Import lessons and export options
+                            user friendly layout.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JASON</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-github" data-testid="button-github-task-management-app">
+                                <span>GitHub</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </button>
+                            <button class="btn-demo" data-testid="button-demo-task-management-app">
+                                <span>Demo</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15,3 21,3 21,9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-testid="project-card-analytics-dashboard">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <img src="image.png" alt=""  height="150px" width="100%" style="border-radius: 1rem;">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mood Checker</h3>
+                        <p class="project-description">
+                           This interactive Mood Checker website helps users reflect on their emotions in a fun and simple way.
+                         </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-github" data-testid="button-github-analytics-dashboard">
+                                <span><a href="https://ada-clitch.github.io/Mood-Checker/">GitHub</a></span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </button>
+                            <button class="btn-demo" data-testid="button-demo-analytics-dashboard">
+                                <span>Demo</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15,3 21,3 21,9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="project-card" data-testid="project-card-analytics-dashboard">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <img src="Screenshot 2025-09-23 184539.png" alt=""  height="150px" width="100%" style="border-radius: 1rem;">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Game(Voice Of The Shadows)</h3>
+                        <p class="project-description">
+                           Voice of the Shadow is a mysterious and immersive game where players navigate through darkness guided only by subtle sounds and hidden clues
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-github" data-testid="button-github-analytics-dashboard">
+                                <span><a href="https://ada-clitch.github.io/Mood-Checker/">GitHub</a></span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </button>
+                            <button class="btn-demo" data-testid="button-demo-analytics-dashboard">
+                                <span>Demo</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15,3 21,3 21,9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="project-card" data-testid="project-card-analytics-dashboard">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <img src="Screenshot 2025-09-23 184227.png" alt=""  height="150px" width="100%" style="border-radius: 1rem;">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Game(Clean The Park)</h3>
+                        <p class="project-description">
+                          Clean the Park is a fun and educational game that encourages players to take care of the environment. By collecting trash, organizing recyclables
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-github" data-testid="button-github-analytics-dashboard">
+                                <span><a href="https://ada-clitch.github.io/Mood-Checker/">GitHub</a></span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </button>
+                            <button class="btn-demo" data-testid="button-demo-analytics-dashboard">
+                                <span>Demo</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15,3 21,3 21,9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                 <div class="project-card" data-testid="project-card-analytics-dashboard">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <img src="Screenshot 2025-09-26 182815.png" alt=""  height="150px" width="100%" style="border-radius: 1rem;">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Foodie Hub – Kabul Restaurants</h3>
+                        <p class="project-description">
+                         Foodie Hob is a vibrant restaurant chain in Kabul that brings people together through delicious flavors and a cozy dining experience
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn-github" data-testid="button-github-analytics-dashboard">
+                                <span><a href="https://ada-clitch.github.io/Mood-Checker/">GitHub</a></span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </button>
+                            <button class="btn-demo" data-testid="button-demo-analytics-dashboard">
+                                <span>Demo</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15,3 21,3 21,9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-testid="contact-title">
+                 <span class="title-accent">Graphic Design Projects</span>
+                </h2>
+                <div class="title-underline"></div>
+            </div>
+
+              <div class="photo-grid">
+      <!-- Photo 1 -->
+      <div class="photo-card">
+        <img src="instasquare.photoeditor.effect.cutout_2025113111114551.png" alt="Working with PC">
+        <div class="overlay">
+        </div>
+      </div>
+
+      <!-- Photo 2 -->
+      <div class="photo-card">
+        <img src="instasquare.photoeditor.effect.cutout_2025113111323694.png" alt="Public place">
+        <div class="overlay">
+        </div>
+      </div>
+
+      <!-- Photo 3 -->
+      <div class="photo-card">
+        <img src="half of face.jpg" alt="Another photo">
+        <div class="overlay"> </div>
+      </div>
+      </div>
+        </div>
+    </section>
+
+    <!-- Extra Section -->
+     <section class="extra"  id="extra">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-testid="contact-title">
+                    Who I Am <span class="title-accent">Beyond the Code</span>
+                </h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">A glimpse into the moments that shape me outside the screen</p>
+            </div>
+
+
+
+        </div>
+     </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-testid="contact-title">
+                    Let's <span class="title-accent">Connect</span>
+                </h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Contact-Info</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Get In Touch</h3>
+                    <div class="social-links" data-testid="contact-email">
+                        <div class="contact-icon">  <a href="https://www.linkedin.com/in/soman-rahimi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                        </div>
+                    </div>
+                    <div class="social-links" data-testid="contact-linkedin">
+                        <div class="contact-icon">  <a href="https://x.com/ClitchAda?t=CHm2NfYyvyp9nDclreFbVQ&s=08" target="_blank"><i class="fab fa-twitter"></i></a></div>
+                        <div class="contact-details">
+                            <h4>Twitter</h4>
+                        </div>
+                    </div>
+                    <div class="social-links" data-testid="contact-github">
+                        <div class="contact-icon">
+                       <a href="https://github.com/Ada-clitch" target="_blank"><i class="fab fa-github"></i></a></div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                        </div>
+                    </div>
+                    <div class="social-links" data-testid="contact-email">
+                        <div class="contact-icon">
+                            <a href="soman2024rahimi@gmail.com"><i class="fas fa-envelope"></i></a>
+                          </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" data-testid="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required data-testid="input-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required data-testid="input-email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required data-testid="textarea-message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button" data-testid="button-submit">
+                        <span>Send Message</span>
+                        <svg class="send-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-title">
+                        <span class="brand-primary">Soman</span>
+                        <span class="brand-secondary">Rahimi</span>
+                    </h3>
+                    <div class="footer-copyright">
+                    <p data-testid="text-copyright">© 2025 Soman Rahimi. All rights reserved.</p>
+                </div>
+                </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
